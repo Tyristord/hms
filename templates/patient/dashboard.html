@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}Dashboard{% endblock %}</title>
+</head>
+<body>
+   {% if info %}
+   <p>
+   	    <h1>Info</h1>
+   	{% for details in info%}
+   	{{details.patient_id}}<br>
+   	{{details.patient_name}}<br>
+   	{{details.age}}<br>
+   	{{details.contact_no}}<br>
+   	{{details.insurance_enquiry}}<br>
+   	{{details.insurance_no}}<br>
+   	{{details.mail_id}}<br>
+   	{{details.patient_address}}
+   	{% endfor %}
+   	{% endif %}
+   </p>
+</body>
+</html>
