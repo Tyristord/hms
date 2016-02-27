@@ -1,24 +1,95 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>{% block title %}Dashboard{% endblock %}</title>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap-theme.min.css">
+    <script src="../../assets/js/bootstrap.min.js"></script>
 </head>
 <body>
-   {% if info %}
-   <p>
-   	    <h1>Info</h1>
-   	{% for details in info%}
-   	{{details.patient_id}}<br>
-   	{{details.patient_name}}<br>
-   	{{details.age}}<br>
-   	{{details.contact_no}}<br>
-   	{{details.insurance_enquiry}}<br>
-   	{{details.insurance_no}}<br>
-   	{{details.mail_id}}<br>
-   	{{details.patient_address}}
-   	{% endfor %}
-   	{% endif %}
-   </p>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <a class="navbar-brand" href="#">Y U P H O R I A</a>
+    <ul class="nav navbar-nav">
+        <li class="active">
+            <a href="index.html">Main</a>
+        </li>
+    </ul>
+    <a href="#" class="navbar-brand navbar-right">Call: +91-9557971225&nbsp&nbsp&nbsp</a>
+</nav>
+<br><br><br>
+<!--side menu bar-->
+<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>Akash Ranjan</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><img src="../../assets/images/hms-02.png" alt="trest" width="170" height="200"></td>
+        </tr>
+        <tr>
+            <td><a href="#">Hospitals</a></td>
+        </tr>
+        <tr>
+            <td>Medicines</td>
+        </tr>
+        <tr>
+            <td>Reports</td>
+        </tr>
+        <tr>
+            <td>Payment</td>
+        </tr>
+        <tr>
+            <td>History</td>
+        </tr>
+        <tr>
+            <td>Calender</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<!-- end side menu bar-->
+<!--Main Contet -->
+<br><br>
+<!--Status, Book, Find Doctor -->
+<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+    <div class="panel panel-default">
+    	  <div class="panel-heading">
+    			<h3 class="panel-title">Search Doctor</h3>
+    	  </div>
+    	  <div class="panel-body">
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+              <input class="form-control input-lg" type="text" placeholder="Doctor name...">
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+               <span class="glyphicon glyphicon-search"></span>
+            </div>
+    	  </div>
+    </div>
+</div>
+<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Search Diagnostics</h3>
+        </div>
+        <div class="panel-body">
+            Panel body
+        </div>
+    </div>
+</div>
+
+<!--Status, Book, Find Doctor End-->
+
+
+<!-- -->
+
+<!-- bottom navbar-->
+<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+    <a class="navbar-brand center-block text-center" href="#"><span class="glyphicon glyphicon-copyright-mark"></span> Tyristord</a>
+</nav>
+<!--end bottom navbar-->
 </body>
 </html>
