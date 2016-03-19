@@ -1,118 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-{% load staticfiles %}
 <head>
     <meta charset="UTF-8">
-    <title>Yuphoria Healthcare Management System</title>
-    <link rel="stylesheet" href="{% static  'assets/plugins/bootstrap/css/bootstrap.min.css' %}">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="{% static 'assets/plugins/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/hms/bootstrap-theme.min.css' %}">
+    <script src="{% static 'assets/js/hms/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'assets/css/essentials.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/layout.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/hms/custom_panel.css' %}">
 </head>
 <body>
 <div class="container">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <a class="navbar-brand" href="#">Y U P H O R I A</a>
-        <a href="" class="navbar-brand navbar-right"><span class="glyphicon glyphicon-earphone"></span>&nbsp +91-9557971225&nbsp&nbsp&nbsp</a>
+        <a href="" class="navbar-brand navbar-right"><span class="glyphicon glyphicon-earphone"></span>&nbsp
+            +91-9557971225&nbsp&nbsp&nbsp</a>
     </nav>
 </div>
-<div class="container text-justify"><br><br><br><br>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur at aut autem culpa, cum delectus explicabo ipsam necessitatibus nulla obcaecati officiis perferendis porro, quo quod quos veniam? Expedita, ipsumlorem Lorem ipsum dolor sit amet, consectetur adipisicing elit.  similique temporibus.
+<div class="container"><br><br><br><br><br>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="owl-carousel buttons-autohide controlls-over nav"
+             data-plugin-options='{"singleItem": false, "autoPlay": true, "navigation": false, "pagination": false, "transitionStyle":"backSlide"}'>
+            <div>
+                <h1>30000+ Registered Doctors</h1>
+            </div>
+            <div>
+                <h1>Regular Online Checkups</h1>
+            </div>
+            <div>
+                <h1>Cure Before It happens</h1>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="clearfix"></div>
 <br>
 <!--End of Center Menu -->
-<br><br>
+<br>
+
 <div class="container">
     <div class="row center">
-        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-lg-offset-1">
+            <div class="thumbnail">
+                <a href="/patient/">
+                    <img src="{% static 'assets/images/hms/main/128/img-00-02.png' %}" alt="" height="128" width="128">
+                    <div class="caption center-block text-center">
+                        <br><h4>Patient</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <div class="thumbnail">
-                <img src="{% static 'assets/images/hms-02.png' %}" alt="" height="100" width="100">
-                <div class="caption">
-                    <h3>Title</h3>
-                    <p>
-                        Content...
-                    </p>
-                    <p>
-                        <a href="#" class="btn btn-primary">Action</a>
-                        <a href="#" class="btn btn-default">Action</a>
-                    </p>
+                <a href="/doctor/">
+                    <img src="{% static 'assets/images/hms/main/128/img-00-03.png' %}" alt="" height="128" width="128">
+                    <div class="caption center-block text-center">
+                        <br><h4>Doctor</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <div class="thumbnail">
+                <img src="{% static 'assets/images/hms/main/128/img-00-06.png' %}" alt="" height="35" width="56">
+                <div class="caption center-block text-center">
+                    <br><h4>Diagnosis</h4>
                 </div>
             </div>
         </div>
         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <div class="thumbnail">
-                <img src="{% static 'assets/images/hms-04.png' %}" alt="" height="100" width="100">
-                <div class="caption">
-                    <h3>Doctor</h3>
-                    <p>
-                        Area for Doctors
-                    </p>
-                    <p>
-                        <a href="#" class="btn btn-primary">Action</a>
-                        <a href="#" class="btn btn-default">Action</a>
-                    </p>
+                <img src="{% static 'assets/images/hms/main/128/img-00-05.png' %}" alt="" height="114" width="114">
+                <div class="caption center-block text-center">
+                    <br><h4>Tests</h4>
                 </div>
             </div>
         </div>
         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
             <div class="thumbnail">
-                <img src="{% static 'assets/images/hms-03.png' %}" alt="" height="100" width="100">
-                <div class="caption">
-                    <h3>Title</h3>
-                    <p>
-                        Content...
-                    </p>
-                    <p>
-                        <a href="#" class="btn btn-primary">Action</a>
-                        <a href="#" class="btn btn-default">Action</a>
-                    </p>
+                <img src="{% static 'assets/images/main/128/img-00-01.png' %}" alt="" height="135" width="145">
+                <div class="caption center-block text-center">
+                    <br><h4>Business</h4>
                 </div>
             </div>
         </div>
-        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-            <div class="thumbnail">
-                <img src="{% static 'assets/images/hms-02.png' %}" alt="" height="100" width="100">
-                <div class="caption">
-                    <h3>Title</h3>
-                    <p>
-                        Content...
-                    </p>
-                    <p>
-                        <a href="#" class="btn btn-primary">Action</a>
-                        <a href="#" class="btn btn-default">Action</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-            <div class="thumbnail">
-                <img src="{% static 'assets/images/hms-01.png' %}" alt="" height="100" width="100">
-                <div class="caption">
-                    <h3>Title</h3>
-                    <p>
-                        Content...
-                    </p>
-                    <p>
-                        <a href="#" class="btn btn-primary">Action</a>
-                        <a href="#" class="btn btn-default">Action</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
     </div>
 </div>
 <!--End of Center Menu -->
-<br><br>
+<br>
 <!--Take a tour Button -->
 <div class="container">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center-block">
-        <button class="btn btn-primary center-block">Take aa Tour</button>
+        <button class="btn btn-primary center-block">Take a Tour</button>
     </div>
 </div>
 <!--Take a tour Button -->
 
 <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-    <a class="navbar-brand center-block text-center" href="#"><span class="glyphicon glyphicon-copyright-mark"></span> Tyristord</a>
+    <a class="navbar-brand center-block text-center" href="#"><span class="glyphicon glyphicon-copyright-mark"></span>
+        Tyristord</a>
 </nav>
+
+<script type="text/javascript">var plugin_path = 'assets/plugins/';</script>
+<script type="text/javascript" src="{% static 'assets/plugins/jquery/jquery-2.1.4.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'assets/js/hms/scripts.js' %}"></script>
+
 </body>
 </html>
